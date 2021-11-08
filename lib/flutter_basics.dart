@@ -1,13 +1,21 @@
+/// Copyright (c) 2021 Jedi Hero https://www.github.com/jedi-hero.
+/// All rights reserved.
+
 library flutter_basics;
 
-import 'package:flutter/material.dart' 
-  show BuildContext, MediaQuery, MediaQueryData, ThemeData, TextTheme, Theme;
-
-
+import 'package:flutter/material.dart'
+    show
+        Widget,
+        BuildContext,
+        MediaQuery,
+        MediaQueryData,
+        TextTheme,
+        Theme,
+        ThemeData,
+        protected;
 
 /// Utility to ease navigation even on a single widget.
 mixin NavigatorSetup {
-
   void setViewIndex(int index,
       {required int target,
       String? customTitle,
@@ -22,8 +30,7 @@ mixin NavigatorSetup {
     });
   }
 
-
-  ///Typically the method `setState`
+  /// Typically the method `setState`
   @protected
   void Function(Function()) get navigatorStateSetup;
 
@@ -43,11 +50,9 @@ mixin NavigatorSetup {
   Map<dynamic, dynamic> extras_ = {};
 }
 
-
-
 /// Used to enable the visibility commonly used ui objects.
-/// One must include a call to [onDidChangeDependencies_] before using the
-/// exposed objects of [typography_], [theme_] and [_media]
+/// One must include a call to [WidgetBasics.onDidChangeDependencies_] before using the
+/// exposed objects namely [WidgetBasics.typography_], [WidgetBasics.theme_] and [WidgetBasics.media_]
 mixin WidgetBasics {
   /// Call this method in the [StetefulWidget.didChangeDependencies] stateful widget
   /// method callback to initialize  [typography_], [theme_] and [_media]
@@ -56,7 +61,6 @@ mixin WidgetBasics {
     typography_ = theme_.textTheme;
     media_ = MediaQuery.of(context);
   }
-
 
   late TextTheme typography_;
   late ThemeData theme_;

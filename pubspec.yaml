@@ -1,6 +1,9 @@
+# Copyright (C) Jedi Hero https://www.github.com/jedi-hero.
+# All rights reserved.
+
 name: flutter_basics
 description: Commonly used custom flutter mixins, classes and functions in the development cycle
-version: 0.0.1
+version: 0.0.3
 homepage:
 
 environment:
