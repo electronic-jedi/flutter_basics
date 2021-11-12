@@ -1,5 +1,14 @@
-# Copyright (C) 2021 Jedi Hero https://www.github.com/jedi-hero.
-# All rights reserved.
+###
+## Filename: c:\Users\dalit\Desktop\flutter_basics\analysis_options.yaml
+## Path: c:\Users\dalit\Desktop\flutter_basics
+## Created Date: Monday, November 8th 2021, 9:09:43 am
+## Author: Dalitso Sakala
+## 
+## Copyright (c) 2021 Jedi Hero
+##
+
+## Info
+
 
 include: package:flutter_lints/flutter.yaml
 

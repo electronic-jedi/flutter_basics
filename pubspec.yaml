@@ -1,9 +1,21 @@
+###
+## Filename: c:\Users\dalit\Desktop\flutter_basics\pubspec.yaml
+## Path: c:\Users\dalit\Desktop\flutter_basics
+## Created Date: Monday, November 8th 2021, 9:09:43 am
+## Author: Dalitso Sakala
+## 
+## Copyright (c) 2021 Jedi Hero
+##
+
+## Info
+
+
 # Copyright (c) 2021 Jedi Hero https://www.github.com/jedi-hero.
 # All rights reserved.
 
 name: flutter_basics
 description: Commonly used custom flutter mixins, classes and functions in the development cycle
-version: 1.0.5
+version: 1.0.6
 homepage:
 
 environment:
