@@ -15,7 +15,9 @@
 
 name: flutter_basics
 description: Commonly used custom flutter mixins, classes and functions in the development cycle
-version: 1.0.6
+version: 1.2.7
+publish_to: none
+
 homepage:
 
 environment:
@@ -25,6 +27,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  dart_utils:
+    git:
+      url: https://github.com/jedi-hero/dart_utils.git
+      tag: 1.1.7
 
 dev_dependencies:
   flutter_test:
