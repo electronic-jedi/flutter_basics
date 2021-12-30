@@ -1,13 +1,13 @@
 ///
-/// Filename: c:\Users\dalit\Desktop\flutter_basics\test\flutter_basics_test.dart
-/// Path: c:\Users\dalit\Desktop\flutter_basics
+/// flutter_basics\test\flutter_basics_test.dart
 /// Created Date: Monday, November 8th 2021, 9:09:43 am
-/// Author: Dalitso Sakala
+/// Author: Jedi Hero
 ///
 /// Copyright (c) 2021 Jedi Hero
 ///
 
 /// A dart library
+
 library flutter_basics_test;
 
 import 'package:flutter_test/flutter_test.dart';

@@ -1,13 +1,15 @@
 ###
-## Filename: c:\Users\dalit\Desktop\flutter_basics\analysis_options.yaml
-## Path: c:\Users\dalit\Desktop\flutter_basics
+## flutter_basics\analysis_options.yaml
 ## Created Date: Monday, November 8th 2021, 9:09:43 am
-## Author: Dalitso Sakala
+## Author: Jedi Hero
 ## 
 ## Copyright (c) 2021 Jedi Hero
 ##
 
 ## Info
+
+
+
 
 
 include: package:flutter_lints/flutter.yaml
