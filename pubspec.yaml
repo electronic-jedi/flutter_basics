@@ -13,7 +13,7 @@
 
 name: flutter_basics
 description: Commonly used custom flutter mixins, classes and functions in the development cycle
-version: 1.2.1+11
+version: 1.2.1+13
 publish_to: none
 
 homepage: "https://github.com/jedi-hero/flutter_basics"
