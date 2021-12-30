@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"licenser.author": "Jedi Hero",
+		"licenser.license": "MIT",
+		"licenser.projectName": "flutter_basics"
+	}
+}

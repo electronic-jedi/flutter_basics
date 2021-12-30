@@ -6,7 +6,7 @@
 /// Copyright (c) 2021 Jedi Hero
 ///
 
-/// Anotations used in this package
+/// Anotations to be used in this package only.
 library jedi_hero_annotations;
 
 class UnstableApi {
