@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Dalitso Sakala
+// Copyright (c) 2021 Jedi Hero
 // 
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
@@ -47,7 +47,7 @@ mixin NavigatorSetup {
       if (viewIndex_ > 0) {
         setViewIndex(viewIndex_ - 1, target: viewTarget_);
       } else {
-        setViewIndex(0, target: viewTarget_ - 1);
+        setViewIndex(0, target: 0);
       }
     } else if (viewIndex_ > 0) {
       setViewIndex(viewIndex_ - 1, target: 0);

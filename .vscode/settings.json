@@ -10,5 +10,8 @@
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
-    }
+    },
+    "licenser.author": "Jedi Hero",
+	"licenser.license": "MIT",
+	"licenser.projectName": "flutter_basics"
 }
