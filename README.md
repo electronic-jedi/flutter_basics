@@ -10,6 +10,18 @@
 # flutter_basics
 Commonly used custom flutter mixins, classes and functions in the development cycle
 
+## Usage
+To depend on this package, refer to a release version from [tags](https://github.com/electronic-jedi/flutter_basics/tags
+)
+
+```yaml
+
+  flutter_basics:
+    git:
+      url: https://github.com/electronic-jedi/flutter_basics.git
+      ref: "vX.Y.Z+A"
+```
+
 ## Version
 
 The version semantics follows specs by [semver](https://semver.org).
