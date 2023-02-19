@@ -1,5 +1,5 @@
 // Copyright (c) 2021 Jedi Hero
-// 
+//
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
@@ -18,6 +18,7 @@ import 'package:flutter/material.dart'
         Widget;
 
 /// Utility to ease navigation even on a single widget.
+@deprecated
 mixin NavigatorSetup {
   /// Handle navigation when we want to satisfy the conditions of moving from a view.
   void setViewIndex(int index,
@@ -78,6 +79,7 @@ mixin NavigatorSetup {
 /// Used to enable the visibility commonly used ui objects.
 /// One must include a call to [WidgetBasics.onDidChangeDependencies_] before using the
 /// exposed objects namely [WidgetBasics.typography_], [WidgetBasics.theme_] and [WidgetBasics.media_]
+@deprecated
 mixin WidgetBasics {
   /// This method must be called.
   /// Call this method in the [StetefulWidget.didChangeDependencies] stateful widget

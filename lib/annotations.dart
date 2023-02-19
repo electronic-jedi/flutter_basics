@@ -9,6 +9,7 @@
 /// Anotations to be used in this package only.
 library jedi_hero_annotations;
 
+@deprecated
 class UnstableApi {
   /// This API is marked as unstable and may be removed.
   const UnstableApi(this.sinceVersion);
