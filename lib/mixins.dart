@@ -75,3 +75,19 @@ mixin EJOverlay {
     ejSetState(() => _entry = e);
   }
 }
+
+mixin EJThemeMX {
+  BuildContext get context;
+  ThemeData get _theme => Theme.of(context);
+
+  Color get primary => _theme.primaryColor;
+  Color get secondary => _theme.colorScheme.secondary;
+}
+
+mixin EJBoundsMX {
+  BuildContext get context;
+  MediaQueryData get _q => MediaQuery.of(context);
+
+  double get width => _q.size.width;
+  double get height => _q.size.width;
+}

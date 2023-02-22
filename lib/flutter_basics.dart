@@ -7,3 +7,4 @@ export 'mixins.dart';
 export 'models.dart';
 export 'utilities.dart';
 export 'extensions.dart';
+export 'widgets.dart';
