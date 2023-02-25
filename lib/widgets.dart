@@ -7,6 +7,15 @@
 
 import 'package:flutter/material.dart';
 
+bool allNulls(List<dynamic> args) {
+  for (var a in args) {
+    if (a != null) {
+      return false;
+    }
+  }
+  return true;
+}
+
 class EJDropdown extends StatelessWidget {
   const EJDropdown(
     this.items, {
@@ -96,7 +105,28 @@ Text EJText(String text, {Color? color, double? size}) {
   if (color != null || size != null) {
     style = TextStyle(color: color, fontSize: size);
   }
+
+  if (!allNulls([color, size])) {
+    style = TextStyle(color: color, fontSize: size);
+  }
   return Text(text, style: style);
+}
+
+Container EJChip(String text,
+    {Color? color,
+    double? size,
+    double radius = 8,
+    Color? background,
+    double? padding,
+    void Function()? onTap}) {
+  var t = EJText(text, color: color, size: size);
+  Widget w;
+  if (onTap != null) {
+    w = InkWell(onTap: onTap, child: t);
+  } else {
+    w = t;
+  }
+  return EJContainer(w, padding: padding, radius: radius, color: background);
 }
 
 class EJEButton extends StatelessWidget {
@@ -161,7 +191,9 @@ Container EJContainer(
   double? radius,
   Color? color,
   double? width,
+  Color? txtColor,
   double? height,
+  Color? borderColor,
   double radTL = 0,
   double radTR = 0,
   double radBL = 0,
@@ -174,6 +206,9 @@ Container EJContainer(
   BorderRadius? bRadius;
   EdgeInsets? bPadding;
   EdgeInsets? bMargin;
+  TextStyle? txtStyle;
+  Widget? child_;
+  BoxBorder? border_;
   if (xmargin != null) {
     bMargin = xmargin;
   }
@@ -194,14 +229,24 @@ Container EJContainer(
   if (radius != null) {
     bRadius = BorderRadius.all(Radius.circular(radius));
   }
+  if (txtColor != null) {
+    txtStyle = TextStyle(color: txtColor);
+  }
 
+  if (child != null) {
+    child_ = DefaultTextStyle.merge(child: child!, style: txtStyle);
+  }
+  if (!allNulls([borderColor])) {
+    border_ = Border.all(color: borderColor!);
+  }
   return Container(
-    child: child,
+    child: child_,
     margin: bMargin,
     width: width,
     height: height,
     padding: bPadding,
-    decoration: BoxDecoration(color: color, borderRadius: bRadius),
+    decoration:
+        BoxDecoration(color: color, borderRadius: bRadius, border: border_),
   );
 }
 
